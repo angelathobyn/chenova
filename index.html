@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chenova | Beranda</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #ee4d2d; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 30px; }
+    nav a { color: white; text-decoration: none; margin-left: 15px; }
+    .search-bar { display: flex; margin: 15px; }
+    .search-bar input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; }
+    .search-bar button { padding: 10px; background-color: #2A9D8F; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 15px; }
+    .product { border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; background: #fff; }
+    .product img { width: 100%; height: 180px; object-fit: cover; }
+    .product h3 { color: #ee4d2d; }
+    .product p { margin: 5px 0; }
+    .product button { background: #ee4d2d; color: white; padding: 8px; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background: #333; color: white; text-align: center; padding: 15px; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Chenova"></div>
+    <nav>
+      <a href="tentang.html">Tentang Saya</a>
+      <a href="pesanan.html">Pesanan</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Cari sabun Chensoap...">
+    <button>Cari</button>
+  </div>
+
+  <div class="grid">
+    <div class="product">
+      <a href="chensoap-kopi.html"><img src="kopi.jpg" alt="Chensoap Kopi"></a>
+      <h3>Chensoap Kopi</h3>
+      <p>Rp 35.000</p>
+      <button onclick="location.href='chensoap-kopi.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-mawar.html"><img src="mawar.jpg" alt="Chensoap Mawar"></a>
+      <h3>Chensoap Mawar</h3>
+      <p>Rp 45.000</p>
+      <button onclick="location.href='chensoap-mawar.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-melati.html"><img src="melati.jpg" alt="Chensoap Melati"></a>
+      <h3>Chensoap Melati</h3>
+      <p>Rp 50.000 - 150.000</p>
+      <button onclick="location.href='chensoap-melati.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-lida-buaya.html"><img src="lidabuaya.jpg" alt="Chensoap Lidah Buaya"></a>
+      <h3>Chensoap Lidah Buaya</h3>
+      <p>Rp 48.675</p>
+      <button onclick="location.href='chensoap-lida-buaya.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-mangga.html"><img src="mangga.jpg" alt="Chensoap Mangga"></a>
+      <h3>Chensoap Mangga</h3>
+      <p>Rp 15.000</p>
+      <button onclick="location.href='chensoap-mangga.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-bluberi.html"><img src="bluberi.jpg" alt="Chensoap Bluberi"></a>
+      <h3>Chensoap Bluberi</h3>
+      <p>Rp 50.000</p>
+      <button onclick="location.href='chensoap-bluberi.html'">Beli Sekarang</button>
+    </div>
+    <div class="product">
+      <a href="chensoap-sakura.html"><img src="sakura.jpg" alt="Chensoap Sakura"></a>
+      <h3>Chensoap Sakura</h3>
+      <p>Rp 25.000</p>
+      <button onclick="location.href='chensoap-sakura.html'">Beli Sekarang</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Chenova | Email: chenova2025@gmail.com
+  </footer>
+</body>
+</html>

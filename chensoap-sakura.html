@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chensoap Sakura - Chenova</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    .container { padding: 20px; max-width: 900px; margin: auto; }
+    img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; }
+    h1 { color: #ee4d2d; }
+    .price { font-size: 1.5em; color: #2A9D8F; }
+    .section { margin-top: 20px; }
+    .ulasan { background: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+    .checkout { background: #f1f1f1; padding: 15px; border-radius: 10px; margin-top: 30px; }
+    label { display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { margin-top: 15px; background: #ee4d2d; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="sakura.jpg" alt="Sabun Chensoap Sakura">
+    <h1>Chensoap Sakura</h1>
+
+    <label for="ukuran">Pilih Ukuran:</label>
+    <select id="ukuran" onchange="updateHarga()">
+      <option value="25000">100 ml - Rp 25,000</option>
+    </select>
+    <p class="price" id="harga">Rp 25,000</p>
+
+    <div class="section">
+      <strong>Deskripsi:</strong>
+      <p>Sabun Chensoap varian Sakura menyegarkan kulit dengan aroma khas yang menenangkan.</p>
+    </div>
+
+    <div class="section"><strong>Garansi:</strong> Barang dijamin tiba atau uang kembali. Gratis Ongkir tersedia.</div>
+    <div class="section"><strong>Nama Toko:</strong> Toko Chenova Official</div>
+
+    <div class="section">
+      <h3>Penilaian & Ulasan</h3>
+      <div class="ulasan">⭐⭐⭐⭐⭐ "Wangi bunga Jepangnya lembut banget!" - Nana</div>
+<div class="ulasan">⭐⭐⭐⭐ "Cantik banget kemasannya, cocok buat hadiah." - Sella</div>
+    </div>
+
+    <div class="checkout">
+      <h3>Form Pembayaran</h3>
+      <label>Nama Lengkap</label>
+      <input type="text" placeholder="Nama Anda">
+      <label>Alamat Lengkap</label>
+      <input type="text" placeholder="Alamat Pengiriman">
+      <label>Pilih Kurir</label>
+      <select><option>JNE</option><option>J&T</option><option>COD</option></select>
+      <label>Metode Pembayaran</label>
+      <select><option>QRIS</option><option>Transfer Bank</option><option>OVO</option></select>
+      <button>Beli Sekarang</button>
+    </div>
+  </div>
+
+  <script>
+    function updateHarga() {
+      const harga = document.getElementById("ukuran").value;
+      document.getElementById("harga").innerText = "Rp " + Number(harga).toLocaleString();
+    }
+  </script>
+</body>
+</html>
